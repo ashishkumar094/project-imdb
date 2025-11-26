@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IMDB Sentiment Analysis</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: #f8f9fa;
+            font-family: Arial;
+        }
+        .container {
+            width: 430px;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        textarea {
+            width: 100%;
+            height: 130px;
+            margin-top: 10px;
+            padding: 12px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        button {
+            margin-top: 15px;
+            padding: 12px 26px;
+            font-size: 18px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #388E3C;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>🎬 IMDB Sentiment Analysis</h2>
+        <form action="/predict" method="post">
+            <textarea name="review" placeholder="Type movie review here..."></textarea>
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
